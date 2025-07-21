@@ -58,9 +58,7 @@ The system operates in three states:
 
 A sample simulation output waveform showing transitions between states and the behavior of `heater_on` and `cooler_on` over time.
 
-> 📌 Paste your waveform image link below:
-
-![Waveform Output](link_to_waveform_image.png)
+![Waveform Output](https://github.com/Srikar109755/Auto_Temperature_Controller/blob/main/Outputs1(TestBench)/Waveform.png)
 
 ---
 
@@ -68,9 +66,7 @@ A sample simulation output waveform showing transitions between states and the b
 
 The state diagram visually explains how the FSM transitions occur based on temperature conditions.
 
-> 📌 Paste your FSM diagram image link below:
-
-![FSM Diagram](link_to_fsm_diagram.png)
+![FSM Diagram](https://github.com/Srikar109755/Auto_Temperature_Controller/blob/main/Images/FSM1.png)
 
 ---
 
@@ -109,7 +105,6 @@ Two testbenches were used:
 
 - Temperature changes are delayed to simulate real-world heat dynamics (e.g., heating every 10 cycles).
 - The controller logic uses a **Moore FSM** where outputs depend only on the current state.
-- Written using **pure Verilog**, no SystemVerilog features.
 
 ---
 
