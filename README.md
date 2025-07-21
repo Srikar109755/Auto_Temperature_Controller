@@ -4,7 +4,7 @@ This project implements a Finite State Machine (FSM)-based automatic temperature
 
 ---
 
-## 📦 Features</summary>
+## Features</summary>
 
 - FSM with 3 states: `IDLE`, `HEATING`, `COOLING`
 - User-configurable temperature and tolerance
