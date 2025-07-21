@@ -22,7 +22,6 @@ module Simple_TB;
         forever #5 clk = ~clk;
     end
 
-    // Test sequence
     initial begin
         reset = 1;
         c_temp = 8'd0;
@@ -53,7 +52,6 @@ module Simple_TB;
     end
     endtask
 
-    // Monitor
     initial begin
         $monitor($time, " Temp=%d, Desired=%d, Tol=%d, Heater=%b, Cooler=%b, State=%b",
                  c_temp, d_temp, temp_tol, ht_on, cl_on, atc.present_state);
