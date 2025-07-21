@@ -1,4 +1,4 @@
-# Automatic Temperature Controller using FSM (Verilog)
+# Automatic Temperature Controller using FSM
 
 This project implements a Finite State Machine (FSM)-based automatic temperature controller in Verilog that intelligently turns **heater** and **cooler** ON/OFF based on current and desired temperature values.
 
