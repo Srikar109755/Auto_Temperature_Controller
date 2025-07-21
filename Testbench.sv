@@ -9,7 +9,6 @@ module Testbench();
     wire heater_on;
     wire cooler_on;
 
-    // Instantiate the DUT
     Design dut(
         .clk(clk),
         .reset(reset),
@@ -28,13 +27,12 @@ module Testbench();
 
     reg [31:0] heat_tick, cool_tick;
 
-    // Clock generation
     initial begin
         clk = 0;
         forever #5 clk = ~clk;
     end
 
-    // Temperature update logic
+    // Temperature update 
     always @(posedge clk) begin
         if (reset) begin
             heat_tick <= 0;
@@ -76,7 +74,7 @@ module Testbench();
     end
     endtask
 
-    // Main stimulus
+
     initial begin
         reset = 1;
         current_temp = 0;
@@ -103,7 +101,7 @@ module Testbench();
         $stop;
     end
 
-    // State monitor for debug
+
     initial begin
         $monitor($time, " Temp = %0d, Desired = %0d, Heater = %b, Cooler = %b, State = %b",
                  current_temp, desired_temp, heater_on, cooler_on, dut.present_state);
